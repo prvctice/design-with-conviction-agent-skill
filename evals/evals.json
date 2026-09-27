@@ -1,0 +1,36 @@
+{
+  "skill_name": "design-with-conviction",
+  "note": "Design quality is judged by people, not assertions. Run each prompt with and without the skill and compare the results side by side.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "landing-page-with-real-copy",
+      "prompt": "Make a landing page for Kiln & Co., a two-person ceramics studio in Hudson, NY. They sell small-batch tableware and run weekend wheel-throwing classes. Headline: 'Plates you'll hand down.' They have no reviews yet.",
+      "expected_output": "States a stance and constraint. Avoids the default SaaS layout. Includes no invented testimonials or review counts; any social-proof slot is clearly a placeholder. Body contrast and size meet the access check. Uses tokens for color and type."
+    },
+    {
+      "id": 2,
+      "name": "board-deck-from-notes",
+      "prompt": "Turn these notes into a 6-slide deck for our board: Q3 revenue $1.2M (up 18%), churn up from 3% to 4.1%, hired 2 engineers, launching the mobile app in November, need a decision on raising prices 10%.",
+      "expected_output": "One idea per slide with one dominant element. Uses only the given numbers, with nothing invented. The pricing decision is framed clearly. A restrained stance suited to a board audience. No decorative icons."
+    },
+    {
+      "id": 3,
+      "name": "poster-take-a-stance",
+      "prompt": "Poster for a noise-music night called STATIC FEAST at a warehouse venue, Oct 31, 10pm, $12 at the door. Go bold.",
+      "expected_output": "Commits to a named expressive stance with an explicit constraint. Legible at poster distance. Keeps all the event facts correct and gives them clear hierarchy. Delivers one recommendation, not several variations."
+    },
+    {
+      "id": 4,
+      "name": "single-change-request",
+      "prompt": "(After a design exists) Make the headline shorter; everything else is perfect.",
+      "expected_output": "Changes only the headline and preserves the layout, colors, and all other copy."
+    },
+    {
+      "id": 5,
+      "name": "honest-critique",
+      "prompt": "Critique this SaaS homepage: centered hero with a purple-blue gradient, 'Unlock the power of AI for your team', three feature cards with emoji icons, a logo bar of 'trusted by' companies.",
+      "expected_output": "Names the median pattern specifically, questions whether the logo bar is real, and recommends one clear direction with the reasoning, rather than a list of small tweaks."
+    }
+  ]
+}
